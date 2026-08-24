@@ -1,1 +1,301 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gold Membership</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">MUZZ<span>GOLD</span></div>
+
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <button class="login-btn">Log in</button>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">MUZZ GOLD</p>
+
+            <h1>More possibilities.<br>More connections.</h1>
+
+            <p>
+                Unlock powerful features and get more control
+                over your search for the right match.
+            </p>
+
+            <button class="gold-btn" onclick="scrollToPricing()">
+                Get Gold
+            </button>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="heart">♥</div>
+
+            <h2>Find your match</h2>
+
+            <p>
+                Discover more people and make meaningful connections.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <p class="small-title">WHY GOLD?</p>
+
+        <h2>Get more from your Muzz experience</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="icon">♥</div>
+
+                <h3>More Likes</h3>
+
+                <p>
+                    Get more opportunities to connect with people.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">⌕</div>
+
+                <h3>Advanced Filters</h3>
+
+                <p>
+                    Use more filters to find people who match your preferences.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">↩</div>
+
+                <h3>Undo</h3>
+
+                <p>
+                    Changed your mind? Go back and check a profile again.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="icon">★</div>
+
+                <h3>Profile Boost</h3>
+
+                <p>
+                    Increase your visibility and get noticed by more people.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Feature Showcase -->
+    <section class="showcase">
+
+        <div class="showcase-box">
+
+            <div class="showcase-text">
+
+                <p class="small-title">MORE CONTROL</p>
+
+                <h2>Find people your way</h2>
+
+                <p>
+                    Gold gives you additional tools to make
+                    discovering the right people easier.
+                </p>
+
+            </div>
+
+            <div class="phone">
+
+                <div class="phone-top"></div>
+
+                <div class="profile-circle"></div>
+
+                <h3>Someone special</h3>
+
+                <p>Looking for a meaningful connection</p>
+
+                <button>Like ♥</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+
+        <p class="small-title">CHOOSE YOUR PLAN</p>
+
+        <h2>Get Muzz Gold</h2>
+
+        <div class="plan-switch">
+
+            <button id="monthlyBtn" onclick="showMonthly()">
+                Monthly
+            </button>
+
+            <button id="yearlyBtn" onclick="showYearly()">
+                Yearly
+            </button>
+
+        </div>
+
+
+        <div class="price-card">
+
+            <h3>Gold Membership</h3>
+
+            <p class="price" id="price">₹499</p>
+
+            <p id="duration">per month</p>
+
+            <ul>
+
+                <li>✓ More Likes</li>
+
+                <li>✓ Advanced Filters</li>
+
+                <li>✓ Profile Boost</li>
+
+                <li>✓ Undo</li>
+
+                <li>✓ Gold Badge</li>
+
+            </ul>
+
+            <button class="gold-btn" onclick="buyGold()">
+                Choose Gold
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+
+        <p class="small-title">QUESTIONS</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(1)">
+                What is Gold Membership?
+                <span>+</span>
+            </button>
+
+            <p id="answer1">
+                Gold Membership gives you additional features
+                that can help you discover more profiles.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(2)">
+                Can I change my plan?
+                <span>+</span>
+            </button>
+
+            <p id="answer2">
+                Yes. You can choose between the available
+                membership options.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(3)">
+                What does Profile Boost do?
+                <span>+</span>
+            </button>
+
+            <p id="answer3">
+                A boost can increase the visibility of your profile.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">MUZZ<span>GOLD</span></div>
+
+        <p>
+            Find more possibilities and meaningful connections.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Gold Membership
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
